@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
-import Root from './components/Root.jsx'
+import DriversList from './pages/driversList/index.jsx'
+import Root from './layouts/Root.jsx'
+import DriverProfile from './pages/driverProfile/index.jsx'
 
 
 
@@ -18,8 +20,12 @@ const router = createHashRouter([
       element: <App />
      },
      {
-      path: '/login',
-      element: <h2>Overview</h2>
+      path: '/driversList',
+      element: <DriversList />
+     },
+     {
+      path: '/driverprofile/:id',
+      element: <DriverProfile />
      }
     
     ],

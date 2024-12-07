@@ -4,11 +4,11 @@ import Map from './components/map'
 
 const App = () => {
   return (
-    <div className='flex w-screen h-screen'>
-      <div className='w-[30%]'>
+    <div className='flex'>
+      <div className=''>
       <Home />
       </div>
-      <div className='w-[69%] bg-[#dfe0eb]'>
+      <div className='w-[75%] '>
       <Map />
       </div>
     </div>

@@ -1,13 +1,8 @@
 import React from 'react'
-import { CiHome } from 'react-icons/ci'
-import { LiaCarSideSolid } from 'react-icons/lia'
-import { VscAccount } from 'react-icons/vsc'
-
-
 
 const Sidebar = () => {
   return (
-    <div className='pt-[55px] px-[46px]'>
+    <div className='pt-[55px] px-[46px] bg-white w-[500px] h-screen shadow-2xl'>
 
       {/* Logo */}
       <div>

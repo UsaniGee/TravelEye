@@ -1,12 +1,12 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 
-const root = () => {
+const Root = () => {
   return (
-    <div>
+    <div className='bg-[#dfe0eb'>
       <Outlet />
     </div>
   )
 }
 
-export default root
+export default Root
