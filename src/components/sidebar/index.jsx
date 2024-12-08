@@ -1,5 +1,4 @@
 import React from 'react'
-import image from "../../../public/assets/group 49.png"
 
 const Sidebar = () => {
   return (
@@ -17,11 +16,11 @@ const Sidebar = () => {
           <span>Home</span>
         </div>
         <div className='flex gap-5 items-center'>
-        <img src="public/assets/account.png" alt="" />
+        <img src="assets/account.png" alt="" />
           <span>Driver</span>
         </div>
         <div className='flex gap-5 items-center'>
-        <img src="public/assets/group.png" alt="" />
+        <img src="assets/group.png" alt="" />
           <span>Cars</span>
         </div>
         <div className='flex gap-5 items-center'>
@@ -29,11 +28,11 @@ const Sidebar = () => {
           <span>Schedule</span>
         </div>
         <div className='flex gap-5 items-center'>
-        <img src="public/assets/data.svg" alt="" />
+        <img src="assets/data.svg" alt="" />
           <span>Backup</span>
         </div>
         <div className='flex gap-5 items-center'>
-          <img src="public/assets/setting.png" alt="" />
+          <img src="assets/setting.png" alt="" />
           <span>Settings</span>
         </div>
         <div className='flex gap-5 items-center'>
