@@ -1,5 +1,4 @@
 import React from 'react'
-import image from "../../../public/assets/group 49.png"
 
 const Sidebar = () => {
   return (

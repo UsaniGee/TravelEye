@@ -3,51 +3,11 @@ import Sidebar from '../../components/sidebar'
 import SearchBar from '../../components/search'
 import Button from '../../components/button'
 import { Link } from 'react-router-dom'
+import { driversList } from "../../context/driversContext/index.js"
 
 const DriversList = () => {
-    const driversList = ([
-        {
-            id: 1,
-            avatar: "public/assets/ellipse 2.png",
-            name: "Mr James Taiwo",
-            status: "Assigned",
-            number: "08132755766",
-            gender: "Male",
-            dob: "12/12/2000",
-            email: "femitaiwo@gmail.com",
-            address: "First Bank Ikeja Lagos",
-            car: "Toyota Hiace",
-            plateNumber: "ABC-123-987",
-            color: "White",
-            route: "Lagos-Calabar",
-            tripCompleted: "18"
-            
-        },
-        {
-            id: 2,
-            avatar: "public/assets/ellipse 2.png",
-            name: "Mr James Taiwo",
-            status: "Assigned"
-            
-        },
-        {
-            id: 3,
-            avatar: "public/assets/ellipse 2.png",
-            name: "Mr James Taiwo",
-            status: "Assigned"
-            
-        },
-        {
-            id: 4,
-            avatar: "public/assets/ellipse 2.png",
-            name: "Mr James Taiwo",
-            status: "Unassigned"            
-        },
-        
-       
-    ])
-
-
+   
+ 
 
   return (
     <div className='flex bg-[#dfe0eb] min-h-screen '>
@@ -73,7 +33,7 @@ const DriversList = () => {
       
      <div className='flex flex-col gap-5 ml-5'>
       
-        {driversList.map((driver) => (
+        {driversList?.map((driver) => (
           <div key={driver.id} className=''>
 
            <Link to={`/driverprofile/${driver.id}`}>
