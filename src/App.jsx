@@ -8,7 +8,7 @@ const App = () => {
       <div className=''>
       <Home />
       </div>
-      <div className='w-[75%] '>
+      <div className='w-[85%] '>
       <Map />
       </div>
     </div>

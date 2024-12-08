@@ -8,7 +8,7 @@ const DriversList = () => {
     const driversList = ([
         {
             id: 1,
-            avatar: "../../../public/assets/ellipse 2.png",
+            avatar: "public/assets/ellipse 2.png",
             name: "Mr James Taiwo",
             status: "Assigned",
             number: "08132755766",
@@ -25,43 +25,32 @@ const DriversList = () => {
         },
         {
             id: 2,
-            avatar: "../../../public/assets/ellipse 2.png",
+            avatar: "public/assets/ellipse 2.png",
             name: "Mr James Taiwo",
             status: "Assigned"
             
         },
         {
             id: 3,
-            avatar: "../../../public/assets/ellipse 2.png",
+            avatar: "public/assets/ellipse 2.png",
             name: "Mr James Taiwo",
             status: "Assigned"
             
         },
         {
             id: 4,
-            avatar: "../../../public/assets/ellipse 2.png",
+            avatar: "public/assets/ellipse 2.png",
             name: "Mr James Taiwo",
             status: "Unassigned"            
         },
-        {
-            id: 4,
-            avatar: "../../../public/assets/ellipse 2.png",
-            name: "Mr James Taiwo",
-            status: "Unassigned"            
-        },
-        {
-            id: 4,
-            avatar: "../../../public/assets/ellipse 2.png",
-            name: "Mr James Taiwo",
-            status: "Unassigned"            
-        },
+        
        
     ])
 
 
 
   return (
-    <div className='flex bg-[#dfe0eb] h-screen'>
+    <div className='flex bg-[#dfe0eb] min-h-screen '>
       <div>
         <Sidebar />
       </div>
@@ -71,8 +60,8 @@ const DriversList = () => {
       <div className='flex justify-between pl-10 pr-20 py-10'>
       <SearchBar />
       <div className='flex items-center justify-between w-[150px]'>
-                <img src="../../../public/assets/vector.png" alt="" />
-                <img className='rounded-full' src="../../../public/assets/m header.png" alt="avatar" />
+                <img src="public/assets/vector.png" alt="" />
+                <img className='rounded-full' src="assets/m header.png" alt="avatar" />
             </div>
       </div>
 
@@ -82,13 +71,13 @@ const DriversList = () => {
         <Button title={"Unassigned"} style={"border border-black w-[168px] rounded-[15px] p-[10px]"}/>
       </div>
       
-     <div className='flex pl-14 flex-col gap-10 '>
+     <div className='flex flex-col gap-5 ml-5'>
       
         {driversList.map((driver) => (
-          <div key={driver.id} className='flex flex-col gap-5'>
+          <div key={driver.id} className=''>
 
            <Link to={`/driverprofile/${driver.id}`}>
-           <div className='flex w-[1270px] bg-white items-center justify-between py-2 px-3 pr-[150px]'>
+           <div className='flex bg-white items-center justify-between w-[900px] py- px-3 '>
               <img src={driver.avatar} alt="" />
               <div>{driver.name}</div>
               <div>ID Number: {driver.id}</div>

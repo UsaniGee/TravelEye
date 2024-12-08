@@ -3,7 +3,7 @@ import image from "../../../public/assets/group 49.png"
 
 const Sidebar = () => {
   return (
-    <div className='pt-[55px] px-[46px] bg-white w-[500px]  '>
+    <div className='pt-[55px] px-[46px] bg-white w-[300px]  '>
 
       {/* Logo */}
       <div>
