@@ -10,12 +10,12 @@ const DriversList = () => {
  
 
   return (
-    <div className='flex bg-[#dfe0eb] min-h-screen '>
+    <div className='flex h-screen'>
       <div>
         <Sidebar />
       </div>
 
-     <div className='w-screen'>
+     <div className='w-screen bg-[#dfe0eb]'>
 
       <div className='flex justify-between pl-10 pr-20 py-10'>
       <SearchBar />
@@ -37,7 +37,7 @@ const DriversList = () => {
           <div key={driver.id} className=''>
 
            <Link to={`/driverprofile/${driver.id}`}>
-           <div className='flex bg-white items-center justify-between w-[900px] py- px-3 '>
+           <div className='flex bg-white items-center justify-between w-[900px] py-2 pl-2 pr-24 '>
               <img src={driver.avatar} alt="" />
               <div>{driver.name}</div>
               <div>ID Number: {driver.id}</div>

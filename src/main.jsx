@@ -9,6 +9,7 @@ import DriverProfile from './pages/driverProfile/index.jsx'
 import Cars from './pages/cars/index.jsx'
 import Settings from './pages/settings/index.jsx'
 import Schedule from './pages/schedule/index.jsx'
+import Backup from './pages/backup/index.jsx'
 
 
 
@@ -35,13 +36,18 @@ const router = createHashRouter([
       element: <Cars />
      },
      {
-      path: '/settings',
-      element: <Settings />
-     },    
-     {
       path: '/schedule',
       element: <Schedule />
      },
+    {
+      path: "/backup",
+      element: <Backup />
+    },
+     {
+      path: '/settings',
+      element: <Settings />
+     },    
+  
     
     ],
   },
