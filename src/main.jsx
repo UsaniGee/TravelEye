@@ -10,6 +10,7 @@ import Cars from './pages/cars/index.jsx'
 import Settings from './pages/settings/index.jsx'
 import Schedule from './pages/schedule/index.jsx'
 import Backup from './pages/backup/index.jsx'
+import Logout from './pages/logout/index.jsx'
 
 
 
@@ -46,6 +47,10 @@ const router = createHashRouter([
      {
       path: '/settings',
       element: <Settings />
+     },    
+     {
+      path: '/logout',
+      element: <Logout />
      },    
   
     
