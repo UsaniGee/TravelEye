@@ -6,6 +6,9 @@ import { createHashRouter, RouterProvider } from 'react-router-dom'
 import DriversList from './pages/driversList/index.jsx'
 import Root from './layouts/Root.jsx'
 import DriverProfile from './pages/driverProfile/index.jsx'
+import Cars from './pages/cars/index.jsx'
+import Settings from './pages/settings/index.jsx'
+import Schedule from './pages/schedule/index.jsx'
 
 
 
@@ -20,13 +23,25 @@ const router = createHashRouter([
       element: <App />
      },
      {
-      path: '/driversList',
+      path: '/driverslist',
       element: <DriversList />
      },
      {
       path: '/driverprofile/:id',
       element: <DriverProfile />
-     }
+     },
+     {
+      path: '/cars',
+      element: <Cars />
+     },
+     {
+      path: '/settings',
+      element: <Settings />
+     },    
+     {
+      path: '/schedule',
+      element: <Schedule />
+     },
     
     ],
   },

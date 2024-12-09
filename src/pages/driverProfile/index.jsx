@@ -1,7 +1,9 @@
 import React from 'react'
 import { driversList } from "../../context/driversContext/index.js"
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import Sidebar from '../../components/sidebar/index.jsx';
+import Button from '../../components/button/index.jsx';
+import { IoIosArrowBack } from 'react-icons/io';
 
 const DriverProfile = () => {
     const { id } = useParams();
@@ -9,13 +11,21 @@ const DriverProfile = () => {
         return driver.id === parseInt(id)        
     })
 
+    const navigate = useNavigate();
+    const handleBack = () => {
+            navigate(-1)
+    }
+
     const { avatar, name, status, number, gender, dob, email, address, car, plateNumber, color, route, tripCompleted } = drivers
   return (
     <div className='flex h-screen'>
      <div>
         <Sidebar />
      </div>
-     <div className='bg-[#dfe0eb] w-full'>
+     <div className='bg-[#dfe0eb] w-full pt-[49px] pl-[49px]'>
+        <div className='flex items-center ' onClick={handleBack}>
+        <IoIosArrowBack /> <span>Back</span>
+        </div>
         <div className='flex'>
             <img src={avatar} alt="" />
             <div>{name}</div>
@@ -73,8 +83,12 @@ const DriverProfile = () => {
                     <p>Trips Complete</p>
                     <p>{tripCompleted}</p>
                 </div>
-            </div>
-           
+            </div>           
+        </div>
+        <div className='bg-white flex flex-col items-center mx-10'>
+            <Button title={"Assign"} />
+            <Button title={"Delete"} style={"border border-red-500"} />
+
         </div>
      </div>
     </div>

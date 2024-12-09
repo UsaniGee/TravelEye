@@ -20,7 +20,7 @@
         {
             id: 2,
             avatar: "public/assets/ellipse 2.png",
-            name: "Mr James Taiwo",
+            name: "Mr John Ade",
             status: "Assigned"
             
         },
