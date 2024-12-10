@@ -37,6 +37,42 @@
             name: "Mr James Taiwo",
             status: "Unassigned"            
         },
+        {
+            id: 4,
+            avatar: "public/assets/ellipse 2.png",
+            name: "Mr James Taiwo",
+            status: "Unassigned"            
+        },
+        {
+            id: 4,
+            avatar: "public/assets/ellipse 2.png",
+            name: "Mr James Taiwo",
+            status: "Unassigned"            
+        },
+        {
+            id: 4,
+            avatar: "public/assets/ellipse 2.png",
+            name: "Mr James Taiwo",
+            status: "Unassigned"            
+        },
+        {
+            id: 4,
+            avatar: "public/assets/ellipse 2.png",
+            name: "Mr James Taiwo",
+            status: "Unassigned"            
+        },
+        {
+            id: 4,
+            avatar: "public/assets/ellipse 2.png",
+            name: "Mr James Taiwo",
+            status: "Unassigned"            
+        },
+        {
+            id: 4,
+            avatar: "public/assets/ellipse 2.png",
+            name: "Mr James Taiwo",
+            status: "Unassigned"            
+        },
         
        
     ])

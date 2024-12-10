@@ -10,14 +10,14 @@ const DriversList = () => {
  
 
   return (
-    <div className='flex h-screen'>
+    <div className='flex '>
       <div>
         <Sidebar />
       </div>
 
-     <div className='w-screen bg-[#dfe0eb]'>
+     <div className='w-screen bg-[#dfe0eb] py-10'>
 
-      <div className='flex justify-between pl-10 pr-20 py-10'>
+      <div className='flex justify-between pl-10 pr-20 pb-10'>
       <SearchBar />
       <div className='flex items-center justify-between w-[150px]'>
                 <img src="public/assets/vector.png" alt="" />
