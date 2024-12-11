@@ -13,7 +13,7 @@ const Sidebar = () => {
     </Link>
       {/* Sidebar Items */}
       <div className='h-[408px] flex flex-col justify-between mt-20 '>
-        <Link to={"/"}>
+        <Link to={"/home"}>
         <div className='flex gap-5 items-center hover:bg-[#dfe0eb] hover:underline p-3'>
         <img src="assets/home.png" alt="" />
           <span>Home</span>
