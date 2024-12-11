@@ -11,6 +11,12 @@ import Settings from './pages/settings/index.jsx'
 import Schedule from './pages/schedule/index.jsx'
 import Backup from './pages/backup/index.jsx'
 import Logout from './pages/logout/index.jsx'
+import SignIn from './pages/signinPage/index.jsx'
+import Signup from './pages/onboarding/index.jsx'
+import MerchantOnboardingStepTwo from './pages/onboarding/stepTwo/index.jsx'
+import MerchantOnboardingStepThree from './pages/onboarding/stepThree/index.jsx'
+import GlobalProvider from './context/globalContext/index.jsx'
+import ProtectedRoute from './components/protectedRoute/index.jsx'
 
 
 
@@ -22,7 +28,25 @@ const router = createHashRouter([
     children: [
      {
       path: '/',
-      element: <App />
+      element: <SignIn />
+     },
+     {
+      path: '/signup',
+      element: <Signup />
+     },
+     {
+      path: '/merchantsteptwo',
+      element: <MerchantOnboardingStepTwo />
+     },
+     {
+      path: '/merchantstepthree',
+      element: <MerchantOnboardingStepThree />
+     },
+     {
+      path: '/home',
+      element: <ProtectedRoute>
+        <App />
+      </ProtectedRoute>
      },
      {
       path: '/driverslist',
@@ -60,6 +84,8 @@ const router = createHashRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} /> 
+    <GlobalProvider>
+      <RouterProvider router={router} /> 
+    </GlobalProvider>
   </StrictMode>,
 )

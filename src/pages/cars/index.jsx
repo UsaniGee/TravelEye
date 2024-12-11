@@ -36,14 +36,13 @@ const Cars = () => {
         {carsList?.map((car) => (
           <div key={car.id} className=''>
 
-           <Link to={`/driverprofile/${car.id}`}>
+           
            <div className='flex bg-white items-center justify-between w-[900px] py-2 pl-2 pr-24 '>
               <img src={car.avatar} alt="" />
               <div>{car.carName}</div>
               <div>Plate No: {car.plateNumber}</div>
               <div className='text-green-400'>{car.status}</div>
            </div>
-           </Link>
           </div>
         ))}
       </div>

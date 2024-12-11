@@ -4,7 +4,7 @@ const Button = (props) => {
   return (
     <div>
       <button className={` ${props.style}`}>
-        {props.title}
+        {props.title} <img src={props.image} alt="" />
       </button>
     </div>
   )
