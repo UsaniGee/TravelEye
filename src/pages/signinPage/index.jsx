@@ -24,6 +24,7 @@ const SignIn = () => {
       navigate("/home")
     }
 
+
   return (
     <div className='flex w-full h-screen'>
       <div className='flex flex-col pl-[100px] justify-center w-[50%] gap-5'>
@@ -33,6 +34,7 @@ const SignIn = () => {
        </div>
        <div>
             <TextField
+             name="email"
              sx={{width: "100%"}}
              label='Email'
               />
@@ -87,7 +89,7 @@ const SignIn = () => {
        
       </div>
       <div className='w-[50%] pl-[100px] flex items-center '>
-        <img className=' h-[500px] w-full' src="public/assets/toyota 1.png" alt="" />
+        <img className=' h-[500px] w-full' src="assets/toyota 1.png" alt="" />
       </div>
     </div>
   )

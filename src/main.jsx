@@ -44,37 +44,69 @@ const router = createHashRouter([
      },
      {
       path: '/home',
-      element: <ProtectedRoute>
+      element: 
+      <ProtectedRoute>
         <App />
       </ProtectedRoute>
      },
      {
       path: '/driverslist',
-      element: <DriversList />
+      element: 
+      <ProtectedRoute>
+        <DriversList />
+      </ProtectedRoute>
+      
      },
      {
       path: '/driverprofile/:id',
-      element: <DriverProfile />
+      element:
+      <ProtectedRoute>
+          <DriverProfile />  
+      </ProtectedRoute>
+      
+     
      },
      {
       path: '/cars',
-      element: <Cars />
+      element: 
+      <ProtectedRoute>
+          <Cars />
+      </ProtectedRoute>
+      
      },
      {
       path: '/schedule',
-      element: <Schedule />
+      element: 
+      <ProtectedRoute>
+          <Schedule />
+      </ProtectedRoute>
+      
+      
      },
     {
       path: "/backup",
-      element: <Backup />
+      element: 
+      <ProtectedRoute>
+          <Backup />
+      </ProtectedRoute>
+      
     },
      {
       path: '/settings',
-      element: <Settings />
+      element: 
+      <ProtectedRoute>
+           <Settings />
+      </ProtectedRoute>
+      
+     
      },    
      {
       path: '/logout',
-      element: <Logout />
+      element: 
+      <ProtectedRoute>
+           <Logout />
+      </ProtectedRoute>
+      
      },    
   
     

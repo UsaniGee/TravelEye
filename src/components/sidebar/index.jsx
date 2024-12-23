@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Logout from '../../pages/logout'
 
 const Sidebar = () => {
   return (
@@ -29,7 +30,7 @@ const Sidebar = () => {
 
         <Link to={"/cars"}>
         <div className='flex gap-5 items-center hover:bg-[#dfe0eb] hover:underline p-3'>
-        <img src="public/assets/group.png" alt="" />
+        <img src="/assets/group.png" alt="" />
           <span>Cars</span>
         </div>
         </Link>
@@ -43,24 +44,25 @@ const Sidebar = () => {
 
         <Link to={"/backup"}>
         <div className='flex gap-5 items-center hover:bg-[#dfe0eb] hover:underline p-3'>
-        <img src="public/assets/data.svg" alt="" />
+        <img src="/assets/data.svg" alt="" />
           <span>Backup</span>
         </div>
         </Link>
 
         <Link to={"/settings"}>
         <div className='flex gap-5 items-center hover:bg-[#dfe0eb] hover:underline p-3'>
-          <img src="public/assets/setting.png" alt="" />
+          <img src="assets/setting.png" alt="" />
           <span>Settings</span>
         </div>
         </Link>
 
         <Link to={"/logout"}>
+       
+        </Link>
         <div className='flex gap-5 items-center hover:bg-[#dfe0eb] hover:underline p-3'>
         <img src="assets/shut-down.png" alt="" />
-          <span>Log out</span>
+         <Logout />
         </div>
-        </Link>
         
       
         
